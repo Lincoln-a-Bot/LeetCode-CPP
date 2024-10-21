@@ -1,12 +1,13 @@
+
 class Solution {
 public:
     bool isValid(string s) {
 
-        unordered_map<char, char> umap;
+        std::unordered_map<char, char> umap;
         umap[')'] = '(';
         umap['}'] = '{';
         umap[']'] = '[';
-        vector <char> seen;
+        std::vector <char> seen;
 
         for (char v : s)
         {
